@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="메인메뉴"
-        android:id="@+id/menuMain" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+    <item android:title="딸기우유"
+        android:id="@+id/menuStrawbery"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_launcher"
+        />
+
+    <item android:title="초코우유"
+        android:id="@+id/menuChoco"
+        app:showAsAction="always"
+        android:icon="@mipmap/ic_launcher"
+        />
+    </group>
+
 </menu>

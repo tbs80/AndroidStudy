@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.c.t03_widget.MainActivity">
+
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+
+    <RadioGroup
+        android:id="@+id/rgShop"
+        android:layout_below="@id/btnTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="맥도날드"
+            android:checked="true"
+            android:id="@+id/rbMc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="버거킹"
+            android:id="@+id/rbBk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkCola"
+        android:layout_below="@+id/rgShop"
+        android:checked="true"
+        android:text="콜라"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/chkSida"
+        android:text="사이다"
+        android:layout_below="@id/chkCola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/chkOrange"
+        android:text="오렌지주스"
+        android:layout_below="@id/chkSida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_below="@id/chkOrange"
+        android:id="@+id/editTextResult"
+        android:hint="여기에 입력을 해라!"
+        android:inputType="number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_toRightOf="@id/editTextResult"
+        android:layout_alignTop="@+id/editTextResult"
+        android:id="@+id/btnOk"
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
